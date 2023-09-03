@@ -1,12 +1,13 @@
-import { Link } from "react-router-dom";
+import WorkoutCard from "../components/WorkoutCard";
 
 export default function Home() {
   return (
-    <main>
-      <h1>Treinos</h1>
-      <ol>
-        <Link to="/workout">Treino 1</Link>
-        <Link to="/workout">Treino 2</Link>
+    <main className="w-full">
+      <h1 className="text-2xl font-bold">Treinos</h1>
+      <ol className="mt-8 flex flex-col gap-4">
+        <WorkoutCard />
+        <WorkoutCard />
+        <WorkoutCard />
       </ol>
     </main>
   );

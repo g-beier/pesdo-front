@@ -1,13 +1,15 @@
 const colors = require("tailwindcss/colors");
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 export default {
   content: ["./index.html", "./src/**/*.{js,jsx}"],
+  darkMode: "class",
   theme: {
     colors: {
       transparent: "transparent",
       current: "currentColor",
-      black: colors.stone[950],
-      white: colors.stone[50],
+      black: colors.stone[900],
+      white: colors.stone[100],
       primary: {
         50: "#ffe6ea",
         100: "#f5bfc4",
@@ -21,6 +23,9 @@ export default {
         900: "#1d0103",
       },
       gray: colors.stone,
+    },
+    fontFamily: {
+      sans: ["'Exo 2'", ...defaultTheme.fontFamily.sans],
     },
     extend: {},
   },

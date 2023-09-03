@@ -5,7 +5,7 @@ import AppRoutes from "./AppRoutes";
 
 function App() {
   return (
-    <div className="mx-auto flex min-h-screen w-full max-w-3xl flex-col items-start justify-stretch gap-4">
+    <div className="mx-auto flex min-h-screen w-full max-w-2xl flex-col items-stretch justify-start gap-4">
       <BrowserRouter>
         <Header />
         <AppRoutes />

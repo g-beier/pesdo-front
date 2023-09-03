@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
+
 export default function Logo() {
   return (
-    <a className="m-4 inline-block" href="/">
+    <Link className="my-4 inline-block" to="/">
       <svg
         className="h-8"
         viewBox="0 0 195 60"
@@ -32,6 +34,6 @@ export default function Logo() {
           fill="#BA2C38"
         />
       </svg>
-    </a>
+    </Link>
   );
 }
