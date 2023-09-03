@@ -1,27 +1,16 @@
-import { useState } from "react";
-import Logo from "./components/Logo";
+import Header from "./components/Header";
+
+import { BrowserRouter } from "react-router-dom";
+import AppRoutes from "./AppRoutes";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <div>
-        <Logo />
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className="mx-auto flex min-h-screen w-full max-w-3xl flex-col items-start justify-stretch gap-4">
+      <BrowserRouter>
+        <Header />
+        <AppRoutes />
+      </BrowserRouter>
+    </div>
   );
 }
 
